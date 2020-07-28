@@ -26,7 +26,7 @@ class Song():
 		
 		self.perma_link = perma_link
 		
-		self.data = dict(requests.get(BASE_URL["perma_link"].format(self.perma_link , 'song')).json())
+		self.data = dict(requests.get(self.BASE_URL["perma_link"].format(self.perma_link , 'song')).json())
 		
 		self.key = list(self.data.keys())[0]
 
@@ -45,7 +45,7 @@ class Song():
 
 	def get_lyrics(self): #return lyrics if available else return failure
 
-	  lyric_data = str(requests.get(BASE_URL["lyrics"].format(self.key)).content)
+	  lyric_data = str(requests.get(self.BASE_URL["lyrics"].format(self.key)).content)
 	  
 	  re_data = re.compile(r"[^\:$\,]+")
 	  
@@ -59,7 +59,7 @@ class Album(object):
 	def __init__(self , perma_link):
 		self.BASE_URL = "https://www.jiosaavn.com/api.php?__call=webapi.get&token={}&type={}&_format=json&_marker=0"
 		self.perma_link = perma_link
-		self.data = dict(requests.get(BASE_URL["perma_link"].format(self.perma_link , 'album')).json())
+		self.data = dict(requests.get(self.BASE_URL.format(self.perma_link , 'album')).json())
 	
 	#return the json data of songs ,  also can be used as attribute
 	@property
