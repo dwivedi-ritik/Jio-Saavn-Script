@@ -1,6 +1,13 @@
 # Jio-Saavn-Python-Module-Unofficial
 
-Require- Perma link of a song or album
+Require- Perma link of a song or album 
+
+Make sure you pass the right link to right class //This is album , you can see in original url
+
+eg - normal link ="https://www.jiosaavn.com/album/dil-bechara/OV26eogqCTQ_"
+     perma_link = "OV26eogqCTQ_" //Last characters of URL
+
+https://www.jiosaavn.com/song/taare-ginn/GTA0dzkdWEQ - This is song url and its perma_link is = "GTA0dzkdWEQ"
 
 Feautures 
 
