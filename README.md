@@ -1,5 +1,14 @@
 # Jio-Saavn-Python-Module-Unofficial
 
+Try just installing axios and
+node saavn.js {permalink} album/song
+
+eg - 
+https://www.jiosaavn.com/song/afsana/EyoaVTZqAGU
+and command will be like this
+node saavn.js EyoaVTZqAGU song
+This is faster than the python one
+
 Require- Perma link of a song or album 
 
 Make sure you pass the right link to right class //This is album , you can see in original url
