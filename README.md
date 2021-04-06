@@ -1,4 +1,4 @@
-# Jio-Saavn-Python-Module-Unofficial
+# Jio-Saavn-Script
 
 Try just installing axios and
 node saavn.js {permalink} album/song
